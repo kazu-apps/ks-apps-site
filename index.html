@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K's Apps｜日本のネットショップのための小さな道具</title>
+<meta name="description" content="K's Apps は、日本のネットショップのための Shopify アプリをつくっています。インボイス制度・軽減税率に対応し、購入者が自分で領収書PDFを発行できる「K's 領収書」を提供中。日本語サポート、24時間以内に返信します。">
+<link rel="canonical" href="https://ks-apps.org/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="K's Apps">
+<meta property="og:title" content="K's Apps｜日本のネットショップのための小さな道具">
+<meta property="og:description" content="インボイス制度・軽減税率に対応し、購入者が自分で領収書PDFを発行できる Shopify アプリ「K's 領収書」を提供しています。">
+<meta property="og:url" content="https://ks-apps.org/">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@kz__apps">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6f5c'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Helvetica,Arial,sans-serif' font-weight='700' fill='%23fff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "K's Apps",
+  "url": "https://ks-apps.org/",
+  "email": "support-receipt@ks-apps.org",
+  "areaServed": "JP",
+  "address": { "@type": "PostalAddress", "addressRegion": "神奈川県", "addressLocality": "藤沢市", "addressCountry": "JP" },
+  "sameAs": ["https://apps.shopify.com/ks-receipt", "https://note.com/apt_heron161", "https://qiita.com/kz-aaps", "https://x.com/kz__apps"]
+}
+</script>
+<style>
+:root{
+  --bg:#ffffff; --bg-soft:#f6f7f5; --fg:#1c1f1d; --fg-muted:#5b615d;
+  --line:#e2e5e1; --accent:#1f6f5c; --accent-soft:#e8f1ed;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#14171a; --bg-soft:#1b1f22; --fg:#e8ebe9; --fg-muted:#a3aba6;
+    --line:#2b3134; --accent:#68c3a6; --accent-soft:#1d2a26;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",sans-serif;
+  font-size:16px; line-height:1.85; letter-spacing:.01em;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+a{color:var(--accent)}
+a:hover{text-decoration:none}
+
+header{border-bottom:1px solid var(--line);padding:22px 0}
+.brand{display:flex;align-items:center;gap:11px;font-weight:700;font-size:19px;letter-spacing:.02em;color:var(--fg);text-decoration:none}
+.mark{width:32px;height:32px;border-radius:9px;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:18px;font-weight:700;flex:none}
+
+.hero{padding:64px 0 12px}
+.hero h1{font-size:29px;line-height:1.5;margin:0 0 18px;letter-spacing:.01em}
+.hero p{font-size:17px;color:var(--fg-muted);margin:0;max-width:34em;text-wrap:pretty;word-break:auto-phrase}
+
+section{padding:46px 0}
+section + section{border-top:1px solid var(--line)}
+h2{font-size:20px;margin:0 0 10px;letter-spacing:.02em}
+.lede{color:var(--fg-muted);margin:0 0 24px}
+
+.card{background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:26px}
+.card h3{margin:0 0 6px;font-size:19px;line-height:1.55}
+.card .sub{margin:0 0 20px;color:var(--fg-muted);font-size:15px}
+
+ul.feat{list-style:none;margin:0 0 22px;padding:0}
+ul.feat li{position:relative;padding:0 0 0 26px;margin:0 0 14px}
+ul.feat li:last-child{margin-bottom:0}
+ul.feat li::before{content:"";position:absolute;left:4px;top:.72em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+ul.feat b{font-weight:700}
+
+.price{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 24px}
+.tag{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:5px 15px;font-size:14px;color:var(--fg-muted)}
+.tag b{color:var(--fg)}
+
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;
+  padding:13px 26px;border-radius:10px;font-size:15px}
+.btn:hover{opacity:.9}
+.after-btn{margin:14px 0 0;font-size:14px;color:var(--fg-muted)}
+
+ol.posts{list-style:none;margin:0;padding:0}
+ol.posts li{padding:13px 0;border-bottom:1px solid var(--line)}
+ol.posts li:last-child{border-bottom:none}
+ol.posts a{text-decoration:none;font-weight:600}
+ol.posts a:hover{text-decoration:underline}
+ol.posts .src{display:inline-block;font-size:12px;color:var(--fg-muted);border:1px solid var(--line);
+  border-radius:5px;padding:1px 7px;margin-right:9px;vertical-align:1px;font-weight:400}
+
+dl.info{margin:0;display:grid;grid-template-columns:8.5em 1fr;gap:12px 18px}
+dl.info dt{color:var(--fg-muted);font-size:15px}
+dl.info dd{margin:0}
+@media (max-width:520px){
+  .hero h1{font-size:24px}
+  dl.info{grid-template-columns:1fr;gap:2px 0}
+  dl.info dd{margin:0 0 14px}
+}
+
+footer{border-top:1px solid var(--line);padding:28px 0 44px;color:var(--fg-muted);font-size:14px}
+footer a{color:var(--fg-muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="/"><span class="mark" aria-hidden="true">K</span>K&#39;s Apps</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <h1>日本のネットショップのための、<br>小さくて確かな道具をつくっています。</h1>
+    <p>制度対応や事務作業のような、売上には直結しないけれど手を抜けない仕事を、Shopify アプリで自動化します。</p>
+  </div>
+
+  <section id="apps">
+    <h2>提供中のアプリ</h2>
+    <p class="lede">Shopify App Store で公開しています。</p>
+
+    <div class="card">
+      <h3>K&#39;s 領収書｜購入者セルフ発行・インボイス/納品書対応</h3>
+      <p class="sub">「領収書ください」への個別対応をなくすための Shopify アプリです。</p>
+
+      <ul class="feat">
+        <li><b>購入者が自分で発行できる</b> — 注文番号とメールアドレスで本人確認したうえで、宛名と但し書きを自分で入力し、領収書 PDF をその場でダウンロードできます。店舗側の作業は発生しません。</li>
+        <li><b>インボイス制度・軽減税率に対応</b> — 適格請求書発行事業者の登録番号、税率ごとの区分記載、8% と 10% が混在する注文の内訳を印字します。税額は税率ごとに一度だけ端数処理します。</li>
+        <li><b>納品書も発行できる</b> — 明細付きの納品書に対応。ギフト用に金額を印字しない設定も選べます。</li>
+        <li><b>会計ソフトに取り込める CSV</b> — 発行履歴を税率別内訳付きで出力できます。freee・マネーフォワードへの取り込みを想定した形式です。</li>
+      </ul>
+
+      <div class="price">
+        <span class="tag"><b>無料プラン</b>　月 15 枚まで</span>
+        <span class="tag"><b>Pro プラン</b>　月額 $6.99・発行無制限</span>
+        <span class="tag">7 日間の無料トライアル</span>
+      </div>
+
+      <a class="btn" href="https://apps.shopify.com/ks-receipt">Shopify App Store で見る</a>
+      <p class="after-btn">インストールは Shopify の管理画面から行えます。</p>
+    </div>
+  </section>
+
+  <section id="posts">
+    <h2>領収書・インボイスの実務メモ</h2>
+    <p class="lede">アプリを作るなかで調べたことを、国税庁の資料を確認しながら記事にしています。</p>
+
+    <ol class="posts">
+      <li><span class="src">note</span><a href="https://note.com/apt_heron161/n/n45d812552c27">Shopify で領収書を発行する 3 つの方法｜手動・汎用アプリ・日本特化アプリを比較</a></li>
+      <li><span class="src">note</span><a href="https://note.com/apt_heron161/n/na3d9a3de3a3b">Shopify のインボイス対応ガイド｜領収書が「適格請求書」になる条件チェックリスト</a></li>
+      <li><span class="src">note</span><a href="https://note.com/apt_heron161/n/ne7e2eb682f4b">領収書、8% と 10% が混ざった注文はどう書く?｜国税庁の資料で確認する</a></li>
+      <li><span class="src">note</span><a href="https://note.com/apt_heron161/n/n92daaa90f217">領収書の宛名は「上様」でいい?｜国税庁の資料で確認する正しい書き方</a></li>
+      <li><span class="src">note</span><a href="https://note.com/apt_heron161/n/n1ae815fe4edc">「もう一度ください」と言われたら｜再発行と宛名変更の実務</a></li>
+      <li><span class="src">note</span><a href="https://note.com/apt_heron161/n/n7ac4f149c03d">Shopify の領収書と電子帳簿保存法｜PDF で発行した控えはどう保存する?</a></li>
+      <li><span class="src">note</span><a href="https://note.com/apt_heron161/n/n86047252ef21">Shopify で納品書を発行する 3 つの方法｜同梱・ギフト対応・金額非表示まで</a></li>
+      <li><span class="src">note</span><a href="https://note.com/apt_heron161/n/ne439cbe4b6b6">売上を freee・マネーフォワードに取り込む方法｜インボイス対応で会計を楽にする</a></li>
+      <li><span class="src">note</span><a href="https://note.com/apt_heron161/n/nde3864e426ee">「領収書ください」対応に疲れた店主へ——問い合わせを仕組みで減らす方法</a></li>
+      <li><span class="src">note</span><a href="https://note.com/apt_heron161/n/n3af963076a0e">Shopify 領収書アプリ比較｜インボイス対応・購入者セルフ発行で選ぶ</a></li>
+      <li><span class="src">Qiita</span><a href="https://qiita.com/kz-aaps/items/5c693fb28261e57ee206">Shopify で領収書・インボイスを出す 3 つの実装方法</a></li>
+      <li><span class="src">Qiita</span><a href="https://qiita.com/kz-aaps/items/dfb7e66d1f1476036665">Shopify アプリ審査に 4 回差し戻された話と、その全記録</a></li>
+    </ol>
+  </section>
+
+  <section id="support">
+    <h2>サポート</h2>
+    <p class="lede">ご不明な点・不具合のご報告は、どなたでもお気軽にご連絡ください。</p>
+    <div class="card">
+      <p style="margin:0 0 6px;font-size:19px;font-weight:700">
+        <a href="mailto:support-receipt@ks-apps.org">support-receipt@ks-apps.org</a>
+      </p>
+      <p style="margin:0;color:var(--fg-muted)">日本語で、24 時間以内にご返信します。</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>運営者情報</h2>
+    <dl class="info">
+      <dt>屋号</dt><dd>K&#39;s Apps</dd>
+      <dt>所在地</dt><dd>神奈川県藤沢市</dd>
+      <dt>事業内容</dt><dd>Shopify アプリの開発・提供</dd>
+      <dt>お問い合わせ</dt><dd><a href="mailto:support-receipt@ks-apps.org">support-receipt@ks-apps.org</a></dd>
+      <dt>プライバシー</dt><dd><a href="https://ks-receipt.ks-apps.workers.dev/privacy">プライバシーポリシー</a></dd>
+    </dl>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    © K&#39;s Apps　·　<a href="https://apps.shopify.com/ks-receipt">Shopify App Store</a>　·　<a href="https://note.com/apt_heron161">note</a>　·　<a href="https://x.com/kz__apps">X</a>
+  </div>
+</footer>
+
+</body>
+</html>
