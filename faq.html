@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>よくある質問｜K's 領収書 - K's Apps</title>
+<meta name="description" content="Shopifyアプリ「K's 領収書」のよくある質問。購入者セルフ発行のしくみ、インボイス制度・軽減税率への対応、料金と無料枠、再発行、納品書、会計ソフト向けCSV、対応できない範囲まで正直にお答えします。">
+<link rel="canonical" href="https://ks-apps.org/faq.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="K's Apps">
+<meta property="og:title" content="よくある質問｜K's 領収書">
+<meta property="og:description" content="購入者セルフ発行のしくみ、インボイス制度対応、料金、再発行、対応できない範囲まで。">
+<meta property="og:url" content="https://ks-apps.org/faq.html">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@kz__apps">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6f5c'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Helvetica,Arial,sans-serif' font-weight='700' fill='%23fff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#ffffff; --bg-soft:#f6f7f5; --fg:#1c1f1d; --fg-muted:#5b615d;
+  --line:#e2e5e1; --accent:#1f6f5c;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#14171a; --bg-soft:#1b1f22; --fg:#e8ebe9; --fg-muted:#a3aba6;
+    --line:#2b3134; --accent:#68c3a6;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Meiryo",sans-serif;
+  font-size:16px; line-height:1.85; letter-spacing:.01em;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+a{color:var(--accent)}
+a:hover{text-decoration:none}
+
+header{border-bottom:1px solid var(--line);padding:22px 0}
+.brand{display:flex;align-items:center;gap:11px;font-weight:700;font-size:19px;letter-spacing:.02em;color:var(--fg);text-decoration:none}
+.mark{width:32px;height:32px;border-radius:9px;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:18px;font-weight:700;flex:none}
+
+.hero{padding:56px 0 8px}
+.hero h1{font-size:27px;line-height:1.5;margin:0 0 14px;letter-spacing:.01em}
+.hero p{font-size:16px;color:var(--fg-muted);margin:0;max-width:34em}
+
+nav.toc{margin:36px 0 0;padding:20px 24px;background:var(--bg-soft);border:1px solid var(--line);border-radius:14px}
+nav.toc h2{font-size:15px;margin:0 0 10px;color:var(--fg-muted);letter-spacing:.04em}
+nav.toc ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+nav.toc a{text-decoration:none;font-size:15px}
+nav.toc a:hover{text-decoration:underline}
+
+section{padding:44px 0 8px}
+section+section{border-top:1px solid var(--line)}
+h2.grp{font-size:20px;margin:0 0 4px;letter-spacing:.02em}
+
+details{border-bottom:1px solid var(--line);padding:2px 0}
+details:last-of-type{border-bottom:none}
+summary{cursor:pointer;padding:15px 0;font-weight:700;font-size:16.5px;line-height:1.6;list-style:none;position:relative;padding-right:30px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:15px;color:var(--accent);font-weight:700;font-size:19px}
+details[open] summary::after{content:"−"}
+details .a{padding:0 0 18px;color:var(--fg-muted)}
+details .a p{margin:0 0 12px}
+details .a p:last-child{margin-bottom:0}
+details .a strong{color:var(--fg)}
+details .a ul{margin:0 0 12px;padding-left:1.3em}
+details .a li{margin:0 0 6px}
+
+.note{background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:0 0 14px}
+.note p{margin:0;font-size:15px}
+
+.cta{margin:44px 0 0;padding:26px;background:var(--bg-soft);border:1px solid var(--line);border-radius:14px}
+.cta p{margin:0 0 14px}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:12px 24px;border-radius:10px;font-size:15px}
+.btn:hover{opacity:.9}
+
+footer{border-top:1px solid var(--line);margin-top:48px;padding:28px 0 44px;color:var(--fg-muted);font-size:14px}
+footer a{color:var(--fg-muted)}
+@media (max-width:520px){ .hero h1{font-size:23px} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="/"><span class="mark" aria-hidden="true">K</span>K&#39;s Apps</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <h1>よくある質問<br>K&#39;s 領収書</h1>
+    <p>できることだけでなく、<strong>できないこと</strong>もそのまま書いています。導入前の判断にお使いください。</p>
+  </div>
+
+  <nav class="toc">
+    <h2>目次</h2>
+    <ul>
+      <li><a href="#basic">使い方のきほん</a></li>
+      <li><a href="#invoice">インボイス制度・税のこと</a></li>
+      <li><a href="#price">料金と発行枚数</a></li>
+      <li><a href="#limits">できないこと・制限</a></li>
+      <li><a href="#ops">運用・サポート</a></li>
+    </ul>
+  </nav>
+
+  <section id="basic">
+    <h2 class="grp">使い方のきほん</h2>
+
+    <details open>
+      <summary>購入者はどうやって領収書を受け取るのですか?</summary>
+      <div class="a">
+        <p>ストアに追加される<strong>領収書発行ページ</strong>で、購入者ご自身が発行します。流れは2ステップです。</p>
+        <ul>
+          <li><strong>注文の確認</strong> — 注文番号とご注文時のメールアドレスを入力し、本人確認します</li>
+          <li><strong>発行</strong> — 宛名と但し書きを入力して、領収書PDFをその場でダウンロード</li>
+        </ul>
+        <p>店舗側の作業は発生しません。ページのURLはアプリの管理画面に表示されるので、注文確認メールやサンクスページからご案内ください。<strong>注文確認メールに貼るだけのスニペット</strong>もアプリ内に用意しています。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>店舗側から発行することもできますか?</summary>
+      <div class="a">
+        <p>できます。管理画面の「領収書を発行」から注文を選び、宛名・但し書きを入力して発行します。購入者から直接ご依頼を受けた場合や、まとめて対応したい場合にお使いください。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>導入にどれくらいかかりますか?</summary>
+      <div class="a">
+        <p>設定は<strong>発行者情報の入力だけ</strong>です。店舗名・住所・電話番号・適格請求書発行事業者の登録番号を一度入れれば、以降はそのまま使えます。</p>
+        <p>まだ注文が無い開店準備中のストアでも、管理画面の<strong>「レイアウトを確認」</strong>から自店の設定でサンプルPDFを生成して、紙面を事前に確認できます(履歴にも残らず、発行枚数も消費しません)。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>納品書も出せますか?</summary>
+      <div class="a">
+        <p>出せます。明細付きの納品書PDFを発行できます。贈り物として送る場合に備えて、<strong>金額を印字しないオプション</strong>もあります。</p>
+      </div>
+    </details>
+  </section>
+
+  <section id="invoice">
+    <h2 class="grp">インボイス制度・税のこと</h2>
+
+    <details>
+      <summary>適格請求書(インボイス)として使えますか?</summary>
+      <div class="a">
+        <p>適格請求書発行事業者の<strong>登録番号</strong>、<strong>税率ごとに区分した対価の額</strong>、<strong>税率ごとの消費税額等</strong>、軽減税率(8%)の対象である旨の注記を印字します。</p>
+        <p>ただし、適格請求書として有効かどうかは<strong>お客さまの登録状況と記載内容によります</strong>。登録番号を未入力の場合、領収書に登録番号は印字されません(インボイス制度に登録していない店舗でも、通常の領収書としてそのままお使いいただけます)。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>8%と10%が混ざった注文はどうなりますか?</summary>
+      <div class="a">
+        <p>税率ごとに分けた内訳表を印字します。軽減税率の対象には※印を付け、その旨を注記します。</p>
+        <p>消費税額は<strong>税率ごとに1回だけ端数処理して算出</strong>しています。明細ごとに計算した税額を足し合わせる方法は、消費税法施行令70条の10および消費税法基本通達1-8-15(注)で認められていないためです。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>印影(社印・角印)は入りますか?</summary>
+      <div class="a">
+        <div class="note"><p><strong>入りません。</strong>印影の登録・印字機能は搭載していません。</p></div>
+        <p>領収書に押印は法律上必須ではありませんが、社印が必要という運用をされている場合は、この点をご確認のうえご検討ください。</p>
+        <p>なお<strong>収入印紙は不要</strong>です。電子的に発行した領収書は印紙税法上の課税文書に当たらないため、その旨の注記をPDFに印字しています(外貨建ての領収書には印字しません)。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>日本円以外の通貨でも発行できますか?</summary>
+      <div class="a">
+        <p>できます。注文の通貨に合わせて金額を表記します(日本円は「¥」、それ以外は「1,860.36 INR」のように通貨コードを後ろに付けます)。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>電子帳簿保存法への対応は?</summary>
+      <div class="a">
+        <p>発行した領収書の控えは、アプリ側で発行履歴として保存され、いつでも同じ内容のPDFを再取得できます。</p>
+        <p>ただし電子帳簿保存法の要件充足は<strong>お客さま側の保存運用を含めた全体で判断されるもの</strong>です。当アプリだけで要件を満たすことを保証するものではありません。詳しくは<a href="https://note.com/apt_heron161/n/n7ac4f149c03d">解説記事</a>もご覧ください。</p>
+      </div>
+    </details>
+  </section>
+
+  <section id="price">
+    <h2 class="grp">料金と発行枚数</h2>
+
+    <details>
+      <summary>料金はいくらですか?</summary>
+      <div class="a">
+        <ul>
+          <li><strong>無料プラン</strong> — 月15枚まで発行できます</li>
+          <li><strong>Proプラン(月額 $6.99)</strong> — 発行枚数は無制限。<strong>7日間の無料トライアル</strong>付き</li>
+        </ul>
+        <p>お支払いは Shopify の請求に合算されます。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>「月15枚」の数え方は? 再発行も1枚に数えますか?</summary>
+      <div class="a">
+        <p>領収書と納品書の<strong>新規発行の合計</strong>で数えます。カウントは日本時間の月初にリセットされます。</p>
+        <p><strong>再発行は枚数に数えません。</strong>同じ注文について2回目以降にダウンロードする場合は、発行時と同一内容のPDFを再生成します(帳票番号も変わらず、「再発行」と表示されます)。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>無料枠を使い切るとどうなりますか?</summary>
+      <div class="a">
+        <p>その月は新規発行ができなくなります。<strong>購入者もセルフ発行ページから発行できなくなる</strong>ため、残りが少なくなると管理画面に警告を表示します。翌月1日にリセットされますが、すぐに再開したい場合は Pro プランへの変更が必要です。</p>
+        <p>なお、すでに発行済みの領収書の<strong>再ダウンロードは引き続き可能</strong>です。</p>
+      </div>
+    </details>
+  </section>
+
+  <section id="limits">
+    <h2 class="grp">できないこと・制限</h2>
+
+    <details open>
+      <summary>古い注文の領収書が出せません</summary>
+      <div class="a">
+        <div class="note"><p><strong>Shopify の仕様により、アプリが参照できるのは直近60日の注文です。</strong></p></div>
+        <p>それより前の注文は、購入者ページ・管理画面のどちらからも発行できません。確定申告などで古い領収書を求められた場合は、お手数ですが個別にご対応ください。</p>
+        <p>この制限を外すための申請を Shopify に行っています。承認され次第、アップデートでお知らせします。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>返金・キャンセルした注文はどうなりますか?</summary>
+      <div class="a">
+        <p>返金・取消のある注文の<strong>納品書</strong>は、<strong>金額を印字せずに</strong>発行します。Shopify から取得できるデータでは、返金後の明細金額・数量・合計を同時に整合させられないためです(誤った金額を印字するより、省略する方が安全と判断しています)。</p>
+        <p>すでに発行済みの領収書は、返金・取消のあとでも<strong>同じ内容で再取得できます</strong>。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>宛名や但し書きを後から直せますか?</summary>
+      <div class="a">
+        <p>直せません。発行済みの領収書は、<strong>発行時の内容のまま</strong>再生成されます。領収書は税務上の証憑であり、あとから内容が変わると監査に耐えられないためです。</p>
+        <p>購入者の発行ページでも、2回目以降は宛名・但し書きが読み取り専用になり、意図せず書き換えられないようにしています。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>対応していない文字はありますか?</summary>
+      <div class="a">
+        <p>PDFに埋め込んでいるフォント(Noto Sans JP)に収録されていない文字は印字できません。日本語・英数字・キリル文字・ベトナム語などは印字できますが、<strong>ハングル・アラビア文字・デーヴァナーガリー・絵文字などは対象外</strong>です。</p>
+        <p>宛名にそうした文字が含まれる場合は、無言で欠落させるのではなく<strong>エラーとしてお知らせ</strong>します。</p>
+      </div>
+    </details>
+  </section>
+
+  <section id="ops">
+    <h2 class="grp">運用・サポート</h2>
+
+    <details>
+      <summary>会計ソフトに取り込めますか?</summary>
+      <div class="a">
+        <p>発行履歴を<strong>税率別内訳付きのCSV</strong>で出力できます。freee・マネーフォワードへの取り込みを想定した形式(金額は数値、日付は YYYY-MM-DD)です。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>顧客の個人情報はどう扱われますか?</summary>
+      <div class="a">
+        <p>購入者ページで入力されたメールアドレスは<strong>本人確認にのみ使用し、アプリには保存しません</strong>。氏名・電話番号・住所といった顧客情報も取得しない設計です。</p>
+        <p>詳しくは<a href="https://ks-receipt.ks-apps.workers.dev/privacy">プライバシーポリシー</a>をご覧ください。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>困ったときの連絡先は?</summary>
+      <div class="a">
+        <p><a href="mailto:support-receipt@ks-apps.org"><strong>support-receipt@ks-apps.org</strong></a> までご連絡ください。<strong>日本語で、24時間以内にご返信します。</strong></p>
+        <p>不具合のご報告の際は、注文番号(または帳票番号)と、発生した操作をお書き添えいただけると調査が早くなります。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>アンインストールするとデータはどうなりますか?</summary>
+      <div class="a">
+        <p>Shopify の定めるコンプライアンス要件に従い、アンインストール後に発行履歴と設定を削除します。削除後は過去の領収書を再取得できなくなりますので、<strong>必要な控えは事前にPDFまたはCSVで保存</strong>してください。</p>
+      </div>
+    </details>
+  </section>
+
+  <div class="cta">
+    <p>ここに無い質問も、遠慮なくお問い合わせください。</p>
+    <a class="btn" href="https://apps.shopify.com/ks-receipt">Shopify App Store で見る</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="/">← K&#39;s Apps</a>　·　<a href="mailto:support-receipt@ks-apps.org">support-receipt@ks-apps.org</a>　·　<a href="https://ks-receipt.ks-apps.workers.dev/privacy">プライバシーポリシー</a>
+  </div>
+</footer>
+
+</body>
+</html>
